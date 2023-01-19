@@ -1,0 +1,20 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        
+      <div mat-card-avatar class="example-header-image"></div>
+  
+      <mat-card-title>Chuck Norris</mat-card-title>
+      <mat-card-subtitle>Chistes</mat-card-subtitle>
+   
+    </mat-card-header>
+    <img mat-card-image src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" >
+    <mat-card-content>
+      <p>
+   {{chuck.value}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="recargar(chuck)">recargar</button>
+     
+    </mat-card-actions>
+  </mat-card>
